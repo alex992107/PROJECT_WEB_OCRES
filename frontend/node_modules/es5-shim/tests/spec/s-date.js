@@ -1,5 +1,3 @@
-/* global describe, it, xit, expect, beforeEach, jasmine */
-
 describe('Date', function () {
     'use strict';
 
@@ -10,9 +8,8 @@ describe('Date', function () {
                 enumerable: false,
                 value: obj
             });
-            for (var _ in obj) { // jscs:ignore disallowUnusedVariables
-                return false;
-            }
+            // eslint-disable-next-line no-unreachable-loop
+            for (var _ in obj) { return false; } // jscs:ignore disallowUnusedVariables
             return obj.x === obj;
         } catch (e) { /* this is ES3 */
             return false;
@@ -467,8 +464,10 @@ describe('Date', function () {
     describe('#getSeconds()', function () {
         it('should return the right value for negative dates', function () {
             negativeDate.forEach(function (item) {
-                item.dates.forEach(function (date) {
-                    expect(date.getSeconds()).toBe(59);
+                item.dates.forEach(function (date, i) {
+                    // the regex here is because in UTC, it's 59, but with TZData applied,
+                    // which can have fractional hour offsets, it'll be 1.
+                    expect(i + ':' + date.getSeconds()).toMatch(new RegExp(i + ':(?:' + 59 + '|' + 1 + ')'));
                 });
             });
         });
