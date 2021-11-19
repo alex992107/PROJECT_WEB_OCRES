@@ -5,19 +5,24 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-class HelloMEssage extends React.Component {
-    render() {
-        return(
-            <div>
-                Hello {this.props.name}
-            </div>
-        );
-    }
-}
+function formatName(user) {
+    return user.firstName + ' ' + user.lastName;
+  }
+  
+  const user = {
+    firstName: 'Harper',
+    lastName: 'Perez'
+  };
+  
+  const element = (
+    <h1>
+      Hello, {formatName(user)}!
+    </h1>
+  );
 
 
 
-ReactDOM.render(<HelloMEssage name="Taylor"/>, document.getElementById('root'));
+ReactDOM.render(element, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
