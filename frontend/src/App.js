@@ -1,19 +1,35 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
-import {Navbar} from 'react-bootstrap'
+import {Nav, Navbar,NavDropdown} from 'react-bootstrap'
 
 function App() {
   return (
     <div className="App">
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" sticky="top" expand="sm" collapseOnSelect>
         <Navbar.Brand>
-          <img src='LogoTest.png' alt='moi'/>
+          <img src={logo} alt='Logo React' width="30px" height="30px" />{''}
           Logo
         </Navbar.Brand>
-
+        <Navbar.Toggle/>
+        <Navbar.Collapse>
+        <Nav>
+          <NavDropdown title="Products">
+            <NavDropdown.Item href="#products/sncf">SNCF</NavDropdown.Item>
+            <NavDropdown.Item href="#products/ratp">RATP</NavDropdown.Item>
+            <NavDropdown.Divider/>
+            <NavDropdown.Item href="#products/ouigo">OUIGO</NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link href="#about-us">About-us</Nav.Link>
+          <Nav.Link href="#Download">Dowload</Nav.Link>
+        </Nav>
+        </Navbar.Collapse>
+        
       </Navbar>
-      
+      <div className='content'>
+        Content
+      </div>
     </div>
   );
 }
