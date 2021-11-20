@@ -1,29 +1,24 @@
 import React from "react";
-import logo from '../logo.svg';
-
+import TrainIcon from '@mui/icons-material/Train';
 
 import "../App.css";
-import {Nav, Navbar,NavDropdown} from 'react-bootstrap'
+import {Navbar} from 'react-bootstrap'
+import Button from "@restart/ui/esm/Button";
 
 function TopNav(){
     return(
         <Navbar bg="dark" variant="dark" sticky="top" expand="sm" collapseOnSelect>
-          <Navbar.Brand>
-            <img src={logo} alt='Logo React' width="30px" height="30px" />{''}
-            Logo
+          <Navbar.Brand href='home'>
+            <div className="Navig">
+            <TrainIcon/> Dashboard
+            </div>
           </Navbar.Brand>
           <Navbar.Toggle/>
-          <Navbar.Collapse>
-          <Nav>
-            <NavDropdown title="Products">
-              <NavDropdown.Item href="#products/sncf">SNCF</NavDropdown.Item>
-              <NavDropdown.Item href="#products/ratp">RATP</NavDropdown.Item>
-              <NavDropdown.Divider/>
-              <NavDropdown.Item href="#products/ouigo">OUIGO</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#about-us">About-us</Nav.Link>
-            <Nav.Link href="#Download">Dowload</Nav.Link>
-          </Nav>
+          <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            Bienvenue, Clément Constantin !  
+          </Navbar.Text>
+          <Button variant="outlined" color="red">Se déconnecter</Button>
           </Navbar.Collapse>
           
         </Navbar>

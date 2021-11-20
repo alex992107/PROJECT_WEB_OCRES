@@ -9,6 +9,21 @@
   padding: 0;
 }
 
+.Navig{
+  margin-left: 15%;
+  display: grid;
+  place-items: center;
+}
+
+.Dash{
+  position: relative;
+  width: 25%;
+  height: 5%;
+  color: antiquewhite;
+  position: fixed;
+  -ms-text-size-adjust: sm;
+}
+
 .Side{
 width: 200px;
 height:100%;
@@ -24,7 +39,7 @@ position: fixed;
 
 .SideList .Row{
   width: 100%;
-  height: 50px;
+  height: 75px;
   list-style-type: none;
   margin: 0%;
   display: flex;
