@@ -9,16 +9,20 @@
   padding: 0;
 }
 
+
+
 .Side{
 width: 200px;
-height: 100%;
+height:100%;
 background-color: #2F4050;
 }
+
+
 
 .SideList{
   height: auto;
   padding: 0;
-  width: 100%;
+  width: 100hv;
 }
 
 .SideList .Row{

@@ -1,15 +1,12 @@
-import React from 'react';
+import React from "react";
 import logo from '../logo.svg';
 
-import '../App.css';
-import 'bootstrap/dist/css/bootstrap.css'
+
+import "../App.css";
 import {Nav, Navbar,NavDropdown} from 'react-bootstrap'
 
-import Button from '@mui/material/Button';
-
-function NavigBar() {
-    return (
-      <div className="App">
+function TopNav(){
+    return(
         <Navbar bg="dark" variant="dark" sticky="top" expand="sm" collapseOnSelect>
           <Navbar.Brand>
             <img src={logo} alt='Logo React' width="30px" height="30px" />{''}
@@ -30,14 +27,7 @@ function NavigBar() {
           </Navbar.Collapse>
           
         </Navbar>
-        <div>
-          <Button variant="text">Text</Button>
-          <Button variant="contained">Contained</Button>
-          <Button variant="outlined">Outlined</Button>
-         
-        </div>
-    </div>
-    );
-  }
+    )
+}
 
-export default NavigBar
+export default TopNav
