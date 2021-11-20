@@ -30,7 +30,7 @@ function NavigBar() {
           </Navbar.Collapse>
           
         </Navbar>
-        <div className='content'>
+        <div>
           <Button variant="text">Text</Button>
           <Button variant="contained">Contained</Button>
           <Button variant="outlined">Outlined</Button>

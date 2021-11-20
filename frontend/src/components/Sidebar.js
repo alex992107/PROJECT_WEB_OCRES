@@ -2,8 +2,7 @@ import React from "react";
 
 function Sidebar(){
     return(
-        <div>
-            La rue
+        <div className="Side">
         </div>
     )
 }

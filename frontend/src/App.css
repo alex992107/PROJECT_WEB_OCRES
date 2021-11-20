@@ -2,12 +2,14 @@
   padding: 12px;
 }
 
-.Menu{
-position: absolute;
-width: 385px;
-height: 1080px;
-left: 0px;
-top: 0px;
+.App{
+  width: 100%;
+  height: 100%;
+  background-color: gray;
 }
 
-
+.Side{
+width: 200px;
+height: 100%;
+background-color: crimson;
+}

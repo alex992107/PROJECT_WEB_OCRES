@@ -7,12 +7,12 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 
 
-
+//NavigBar
 function App() {
   return (
-      <div>
-        <NavigBar/>
-        <Sidebar/>
+      <div className="App">
+        <p>Ouiii</p>
+        <Sidebar/>      
       </div>
   );
 }
