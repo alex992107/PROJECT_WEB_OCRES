@@ -1,15 +1,16 @@
-.content{
-  padding: 12px;
+.App{
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
 }
 
-.App{
-  width: 100%;
-  height: 100%;
-  background-color: gray;
+.body{
+  margin: 0;
+  padding: 0;
 }
 
 .Side{
 width: 200px;
 height: 100%;
-background-color: crimson;
+background-color: #2F4050;
 }
