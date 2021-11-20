@@ -14,3 +14,41 @@ width: 200px;
 height: 100%;
 background-color: #2F4050;
 }
+
+.SideList{
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.SideList .Row{
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.SideList .Row:hover{
+  cursor: pointer;
+  background-color: #424242;
+}
+
+.SideList #active{
+  background-color: #424242;
+}
+
+.Row #icon{
+  flex:30%;
+  display: grid;
+  place-items: center;
+} 
+
+.Row #title{
+  flex:70%;
+}
