@@ -8,6 +8,7 @@ import { Container,Row,Col } from 'react-bootstrap';
 
 function Accueil(){
     return(
+<<<<<<< HEAD
       <Container >
         <Row xs={3} md={3} lg={0}>
           <Col>
@@ -29,6 +30,7 @@ function Accueil(){
         </Row>
       </Container>
     )
+
 }
 
 export default Accueil
