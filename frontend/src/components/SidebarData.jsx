@@ -14,7 +14,7 @@ export const SidebarData =[
     {
         title:"Travail",
         icon:<WorkIcon/>,
-        link:"/mail",
+        link:"/travail",
     },
     {
         title:"Vacance",
