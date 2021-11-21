@@ -1,11 +1,11 @@
 import React from "react";
 
-function home(){
+function accueil(){
     return(
         <div>
-            Home
+            
         </div>
     )
 }
 
-export default home
+export default accueil

@@ -3,7 +3,7 @@ import React from "react";
 function r_vacance(){
     return(
         <div>
-            Test Home
+            Test r VAC
         </div>
     )
 }
