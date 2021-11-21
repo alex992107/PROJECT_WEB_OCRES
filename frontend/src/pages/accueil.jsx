@@ -7,9 +7,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 function Accueil(){
     return(
       <div>
-      <button className="Carre1">1</button>;
-      <button className="Carre2">2</button>;
-      <button className="Carre3">3</button>;
+      <div className="Carre1">1</div>;
+      <div className="Carre2">2</div>;
       </div>
       
     )

@@ -16,30 +16,27 @@
 }
 
 .Carre1{
-  margin-left:13%;
-  width: 100%;
+  margin-left:17%;
+  width: 83%;
   height: 20%;
-  position: fixed;
-  display: flex;
+  border: solid turquoise;
+  position: fixed ;
+
 
 }
 .Carre2{
-  margin-left:13%;
-  margin-top: 10%;
-  width: 100%;
+  margin-left:17%;
+  margin-top: 8%;
+  width: 83%;
   height: 20%;
-  position: fixed;
-}
-.Carre3{
-  margin-left:13%;
-  margin-top:15% ;
-  width: 100%;
-  height: 20%;
-  position: fixed;
+  position: fixed ;
+  border: solid red;
+
 }
 
+
 .Side{
-width: 200px;
+width: 17%;
 height:100%;
 background-color: #2F4050;
 position: fixed;
@@ -53,7 +50,7 @@ position: fixed;
 
 .SideList .Row{
   width: 100%;
-  height: 75px;
+  height: 100px;
   list-style-type: none;
   margin: 0%;
   display: flex;
@@ -63,6 +60,7 @@ position: fixed;
   align-items: center;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
+
 
 .SideList .Row:hover{
   cursor: pointer;

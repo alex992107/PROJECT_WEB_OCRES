@@ -23,6 +23,7 @@ function TopNav(){
             </Routes>
           </div>
         </Navbar.Brand>
+        <Navbar.Toggle/>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
            Bienvenue, Clément Constantin !  
