@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import {SidebarData} from "./SidebarData.jsx";
 
+//div className en bootstrap ??
 
 function Sidebar(){
     return(

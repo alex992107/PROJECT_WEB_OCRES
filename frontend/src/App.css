@@ -15,14 +15,18 @@
   place-items: center;
 }
 
+
+.bordure{
+  border: solid red;
+}
+
+
 .Carre1{
   margin-left:17%;
   width: 83%;
   height: 20%;
   border: solid turquoise;
   position: fixed ;
-
-
 }
 .Carre2{
   margin-left:17%;
@@ -31,8 +35,9 @@
   height: 20%;
   position: fixed ;
   border: solid red;
-
 }
+
+
 
 
 .Side{
