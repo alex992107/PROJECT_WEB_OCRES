@@ -18,6 +18,14 @@
 
 .bordure{
   border: solid red;
+  position: fixed;
+}
+
+/* No padding  = pas de bordure et position fixe = 1 screen en taille*/
+.nopadding {
+  padding: 0 ;
+  margin: 0;
+  position: fixed;
 }
 
 
@@ -31,20 +39,16 @@
 .Carre2{
   margin-left:17%;
   margin-top: 8%;
-  width: 83%;
+  width: 70%;
   height: 20%;
   position: fixed ;
   border: solid red;
 }
 
-
-
-
 .Side{
-width: 17%;
-height:100%;
-background-color: #2F4050;
-position: fixed;
+  height: 100%;
+  background-color: #2F4050;
+  position: fixed;
 }
 
 .SideList{

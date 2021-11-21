@@ -2,18 +2,32 @@ import React from "react";
 
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import { Container,Row,Col } from 'react-bootstrap';
+
 
 
 function Accueil(){
     return(
-      <div>
-        <div className="bordure">
-          1
-        </div>;
-        <div className="Carre2">
-        2
-        </div>;
-      </div>
+      <Container >
+        <Row xs={3} md={3} lg={0}>
+          <Col>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          <div className="bordure">
+            1er colonne
+            80%
+          </div>
+          </Col>
+          <Col>
+          <div className="bordure">
+            2nd colonne
+            20%
+          </div>
+          </Col>
+        </Row>
+      </Container>
     )
 }
 
