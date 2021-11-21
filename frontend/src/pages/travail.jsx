@@ -1,6 +1,6 @@
 import React from "react";
 
-function travail(){
+function Travail(){
     return(
         <div>
             Test taff
@@ -8,4 +8,4 @@ function travail(){
     )
 }
 
-export default travail
+export default Travail

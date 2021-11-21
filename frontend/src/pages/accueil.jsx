@@ -1,11 +1,18 @@
 import React from "react";
 
-function accueil(){
+import '../App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+function Accueil(){
     return(
-        <div>
-            
-        </div>
+      <div>
+      <button className="Carre1">1</button>;
+      <button className="Carre2">2</button>;
+      <button className="Carre3">3</button>;
+      </div>
+      
     )
 }
 
-export default accueil
+export default Accueil

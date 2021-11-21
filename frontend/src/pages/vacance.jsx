@@ -1,6 +1,6 @@
 import React from "react";
 
-function vacance(){
+function Vacance(){
     return(
         <div>
             Test vac
@@ -8,4 +8,4 @@ function vacance(){
     )
 }
 
-export default vacance
+export default Vacance

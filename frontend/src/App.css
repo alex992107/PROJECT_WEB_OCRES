@@ -15,13 +15,27 @@
   place-items: center;
 }
 
-.Dash{
-  position: relative;
-  width: 25%;
-  height: 5%;
-  color: antiquewhite;
+.Carre1{
+  margin-left:13%;
+  width: 100%;
+  height: 20%;
   position: fixed;
-  -ms-text-size-adjust: sm;
+  display: flex;
+
+}
+.Carre2{
+  margin-left:13%;
+  margin-top: 10%;
+  width: 100%;
+  height: 20%;
+  position: fixed;
+}
+.Carre3{
+  margin-left:13%;
+  margin-top:15% ;
+  width: 100%;
+  height: 20%;
+  position: fixed;
 }
 
 .Side{

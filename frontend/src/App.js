@@ -1,32 +1,35 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 import Sidebar from './components/Sidebar.jsx';
 import TopNav from './components/TopNav.jsx';
-
-import accueil from './pages/home.jsx';
-import home from './pages/home.jsx';
-import travail from './pages/travail.jsx';
-import vacance from './pages/vacance.jsx';
-import r_vacance from './pages/vacance.jsx';
+import Accueil from './pages/accueil.jsx';
+import Home from './pages/home.jsx';
+import Travail from './pages/travail.jsx';
+import Vacance from './pages/vacance.jsx';
+import R_vacance from './pages/r_vacance.jsx';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
-      <div className="App">
+    <div className="App">
         <TopNav/>
         <Sidebar/>
-        <Routes>
-        <Route exact path="/accueil" element={home}/>
-        <Route exact path="/" component={home}/>
-        <Route exact path="/" component={travail}/>
-        <Route exact path="/" component={vacance}/>
-        <Route exact path="/" component={r_vacance}/>
-        </Routes>
-      </div>
+    <Router>
+      
+      <Routes>
+      <Route path="/accueil" element={<Accueil/>}/>
+      <Route path="/home" element={<Home/>}/>
+      <Route path="/travail" element={<Travail/>}/>
+      <Route path="/vacance" element={<Vacance/>}/>
+      <Route path="/r_vacance" element={<R_vacance/>}/>
+
+      </Routes>
+    </Router>
+    </div>
   );
 }
 
