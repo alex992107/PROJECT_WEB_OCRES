@@ -4,9 +4,9 @@
   background-color: gray;
 }
 
-.body{
-  margin: 0;
-  padding: 0;
+.marge{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .Navig{
@@ -25,29 +25,13 @@
 .nopadding {
   padding: 0 ;
   margin: 0;
-  position: fixed;
 }
 
 
-.Carre1{
-  margin-left:17%;
-  width: 83%;
-  height: 20%;
-  border: solid turquoise;
-  position: fixed ;
-}
-.Carre2{
-  margin-left:17%;
-  margin-top: 8%;
-  width: 70%;
-  height: 20%;
-  position: fixed ;
-  border: solid red;
-}
+
 .Side{
   height: 100%;
   background-color: #2F4050;
-  position: fixed;
 }
 
 .SideList{
@@ -60,7 +44,7 @@
   width: 100%;
   height: 100px;
   list-style-type: none;
-  margin: 0%;
+  margin: 0;
   display: flex;
   flex-direction: row;
   color: white;
@@ -81,6 +65,7 @@
 
 .Row #icon{
   flex:30%;
+
   display: grid;
   place-items: center;
 } 
