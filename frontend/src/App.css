@@ -1,13 +1,37 @@
+html { font-size: 22px; }
+body { padding: 0rem; }
+
 .App{
   width: 100vw;
   height: 100vh;
   background-color: gray;
+  position: fixed;
 }
 
-.marge{
-  margin-top: 0;
-  margin-bottom: 0;
+.Content{
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
 }
+
+.Mid{
+  display: flex;
+  }
+
+.Col80{
+  display:"grid";
+  width: 60vw;
+  justify-content: center;
+  background-color: red;
+}
+
+.Col20{
+  background-color: purple;
+  width: 30vw;
+  justify-content: center;
+}
+
 
 .Navig{
   margin-left: 15%;
@@ -27,7 +51,11 @@
   margin: 0;
 }
 
+/* Side Bar Css avec des fonctions de passages de souris et de selection */
+
 .Side{
+  padding: 0;
+  width: 20vh;
   height: 100%;
   background-color: #2F4050;
 }
@@ -35,7 +63,7 @@
 .SideList{
   height: auto;
   padding: 0;
-  width: 100hv;
+  width: 100%;
 }
 
 .SideList .Row{
@@ -69,3 +97,5 @@
 .Row #title{
   flex:70%;
 }
+
+/* FIN */

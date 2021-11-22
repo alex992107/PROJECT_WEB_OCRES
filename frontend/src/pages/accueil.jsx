@@ -1,25 +1,22 @@
 import React from "react";
 
 import '../App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import { Container,Row,Col } from 'react-bootstrap';
-
-
 
 function Accueil(){
     return(
-      <Container>
-        <Row>
-          <Col>
-            1er colonne
-            80%
-          </Col>
-          <Col>
-            2nd colonne
-            20%
-          </Col>
-        </Row>
-      </Container>
+      <div className="Mid">
+        <div className="Col80">
+        Col 1 80%
+        <br/>
+        1 header titre h1 et un bloc en dessous
+        </div>
+        <div className="Col20">
+        Col 2 20%
+        <br/>
+        2 blocs dedans
+        </div>           
+    </div>
+          
     )
 
 }
