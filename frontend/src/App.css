@@ -22,14 +22,15 @@ body { padding: 0rem; }
 .Col80{
   display:"grid";
   width: 60vw;
-  justify-content: center;
+  text-align: center;
   background-color: red;
 }
 
 .Col20{
+  text-align: center;
   background-color: purple;
   width: 30vw;
-  justify-content: center;
+
 }
 
 
