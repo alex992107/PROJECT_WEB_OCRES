@@ -3,7 +3,6 @@ import TrainIcon from '@mui/icons-material/Train';
 
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
-
 import "../App.css";
 
 import accueil from '../pages/accueil.jsx';

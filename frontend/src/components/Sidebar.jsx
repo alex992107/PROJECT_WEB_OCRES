@@ -10,7 +10,7 @@ import Home from '../pages/home.jsx';
 import Travail from '../pages/travail.jsx';
 import Vacance from '../pages/vacance.jsx';
 import Rvacance from '../pages/r_vacance.jsx';
-
+import Error from '../pages/error.jsx'
 
 //div className en bootstrap ??
 
@@ -37,16 +37,17 @@ function Sidebar(){
                 </div>
             </Col>
             <Col xs={8} sm={9} md={10} lg={11} xl={11}>
-            <Router>
-              <Routes>
-              <Route path="/accueil" element={<Accueil/>}/>
-              <Route path="/home" element={<Home/>}/>
-              <Route path="/travail" element={<Travail/>}/>
-              <Route path="/vacance" element={<Vacance/>}/>
-                <Route path="/r_vacance" element={<Rvacance/>}/>
-              </Routes>
-            </Router>
-            
+                <Router>
+                    <Routes>
+                        <Route path="/" element={<Accueil/>}/>
+                        <Route path="/accueil" element={<Accueil/>}/>
+                        <Route path="/home" element={<Home/>}/>
+                        <Route path="/travail" element={<Travail/>}/>
+                        <Route path="/vacance" element={<Vacance/>}/>
+                        <Route path="/r_vacance" element={<Rvacance/>}/>
+                        <Route path="*" element={<Error/>}/>
+                    </Routes>
+                </Router>
             </Col>
         </Row>
         </Container>  

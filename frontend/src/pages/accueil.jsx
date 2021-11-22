@@ -8,7 +8,7 @@ import { Container,Row,Col } from 'react-bootstrap';
 
 function Accueil(){
     return(
-      <Container >
+      <Container>
         <Row>
           <Col>
             1er colonne

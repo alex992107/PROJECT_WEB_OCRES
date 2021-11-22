@@ -5,8 +5,8 @@
 }
 
 .marge{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .Navig{
@@ -15,7 +15,7 @@
   place-items: center;
 }
 
-
+/* Class de test pour voir les bordures des composants */
 .bordure{
   border: solid red;
   position: fixed;
@@ -26,8 +26,6 @@
   padding: 0 ;
   margin: 0;
 }
-
-
 
 .Side{
   height: 100%;
@@ -53,7 +51,6 @@
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
-
 .SideList .Row:hover{
   cursor: pointer;
   background-color: #424242;
@@ -65,7 +62,6 @@
 
 .Row #icon{
   flex:30%;
-
   display: grid;
   place-items: center;
 } 
