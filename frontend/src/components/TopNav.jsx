@@ -27,7 +27,6 @@ function TopNav(){
         <div className="Name">
           <Navbar.Text>
            Bienvenue, Clément Constantin !  
-           
           </Navbar.Text>
           </div>
           <div className="Welcome">

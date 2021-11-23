@@ -10,7 +10,6 @@ body { padding: 0rem; }
 
 .Content{
   display: flex;
-  position: fixed;
   width: 100vw;
   height: 100vh;
 }
@@ -20,22 +19,32 @@ body { padding: 0rem; }
   }
 
 .Col80{
-  display:"grid";
   width: 60vw;
   text-align: center;
-  background-color: red;
+  background-color: blue;
 }
 
 .Col20{
-  text-align: center;
-  background-color: purple;
-  width: 30vw;
+  display :grid;
+}
 
+.Col201{
+  text-align: center;
+  background-color: white;
+  width: 30vw;
+  height: 45vh;
+}
+
+.Col202{
+  text-align: center;
+  background-color: red;
+  width: 30vw;
+  height: 55vh;
+  margin: auto;
 }
 .Welcome
 {display: none;
 }
-
 
 .Navig{
   margin-left: 15%;
@@ -102,28 +111,31 @@ body { padding: 0rem; }
   flex:70%;
 }
 
-@media all and (max-width:767px){
+@media all and (max-width:900px){
   
-.Col20{
-display: none;
-}
-.SideList .Row{
+  .Col201{
+  display: none;
+  }
+
+  .Col202{
+  display: none;
+  }
+
+  .SideList .Row{
   width: 100%;
   height: 100px;
   list-style-type: none;
   margin: 0;
   display: flex;
   flex-direction: row;
-  color: yellow;
   justify-content: center;
   align-items: center;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;}
+
   .Col80{
-    
     background-color: red;
-    width: 90vw;
-    text-align: left;
-    
+    width: 70vw;
+    text-align: center;
   }
   .Row #title{
     flex:60%;
@@ -136,7 +148,6 @@ display: none;
   {
     display: flex;
   }
-
 }
 
 /* FIN */
