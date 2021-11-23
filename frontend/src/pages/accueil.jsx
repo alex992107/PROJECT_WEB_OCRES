@@ -1,6 +1,7 @@
 import React from "react";
 
 import '../App.css';
+import graph from '../components/Graph.jsx'
 
 function Accueil(){
     return(
@@ -15,11 +16,11 @@ function Accueil(){
         <div className="Col20">
           <div className="Col201">
           <h2>Col 2 -1 20%</h2>
-          1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9
-
+          <graph/>
           </div>    
           <div className="Col202">
           <h2>Col 2-2 1 20%</h2>
+
           1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9
           </div>   
         </div>    
