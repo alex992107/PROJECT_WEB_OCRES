@@ -1,7 +1,6 @@
 import React from "react";
 
 import '../App.css';
-import graph from '../components/Graph.jsx'
 
 function Accueil(){
     return(
@@ -16,7 +15,6 @@ function Accueil(){
         <div className="Col20">
           <div className="Col201">
           <h2>Col 2 -1 20%</h2>
-          <graph/>
           </div>    
           <div className="Col202">
           <h2>Col 2-2 1 20%</h2>
