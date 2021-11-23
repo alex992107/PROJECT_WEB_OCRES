@@ -32,6 +32,9 @@ body { padding: 0rem; }
   width: 30vw;
 
 }
+.Welcome
+{display: none;
+}
 
 
 .Navig{
@@ -97,6 +100,43 @@ body { padding: 0rem; }
 
 .Row #title{
   flex:70%;
+}
+
+@media all and (max-width:767px){
+  
+.Col20{
+display: none;
+}
+.SideList .Row{
+  width: 100%;
+  height: 100px;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  color: yellow;
+  justify-content: center;
+  align-items: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;}
+  .Col80{
+    
+    background-color: red;
+    width: 90vw;
+    text-align: left;
+    
+  }
+  .Row #title{
+    flex:60%;
+    width: 20vw;
+  }
+  .Name{
+    display: none;
+  }
+  .Welcome
+  {
+    display: flex;
+  }
+
 }
 
 /* FIN */

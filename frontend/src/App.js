@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useMediaQuery } from '@mui/material';
 import Sidebar from './components/Sidebar.jsx';
 import TopNav from './components/TopNav.jsx';
 import Accueil from './pages/accueil.jsx';
