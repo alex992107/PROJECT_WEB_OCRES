@@ -42,6 +42,7 @@ body { padding: 0rem; }
   height: 55vh;
   margin: auto;
 }
+
 .Welcome
 {display: none;
 }
@@ -50,6 +51,14 @@ body { padding: 0rem; }
   margin-left: 15%;
   display: grid;
   place-items: center;
+}
+
+.pie {
+  align-items: center;
+  width: 30vw; 
+  height: 30vh;
+  border-radius: 50%;
+  background: conic-gradient(yellowgreen 10%, #655 0);
 }
 
 /* Class de test pour voir les bordures des composants */

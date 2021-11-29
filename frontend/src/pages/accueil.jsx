@@ -17,9 +17,10 @@ function Accueil(){
           <h2>Col 2 -1 20%</h2>
           </div>    
           <div className="Col202">
-          <h2>Col 2-2 1 20%</h2>
-
-          1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9
+          <h3>Nombre de requettes effectuées</h3>
+          <div className="pie" data-value="0">
+            1
+          </div>
           </div>   
         </div>    
     </div>     

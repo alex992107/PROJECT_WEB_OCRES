@@ -4,6 +4,7 @@ import HomeIcon from '@mui/icons-material/Home'; //Maison
 import WorkIcon from '@mui/icons-material/Work'; //Taff
 import WbSunnyIcon from '@mui/icons-material/WbSunny'; //Vacances
 import LocationCityIcon from '@mui/icons-material/LocationCity'; //Retour
+import ReportProblemIcon from '@mui/icons-material/ReportProblem'; //Probleme
 
 
 export const SidebarData =[
@@ -32,4 +33,10 @@ export const SidebarData =[
         icon:<LocationCityIcon/>,
         link:"/r_vacance",
     },
+    {
+        title:"Incidents",
+        icon:<ReportProblemIcon/>,
+        link:"/issues",
+    },
+    
 ]

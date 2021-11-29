@@ -3,7 +3,7 @@ var router = express.Router();
 var _ = require('underscore');
 
 /* GET users listing. */
-let users =[
+const users =[
   {user:"Clément",
   id:"0"},
   {user:"Alexandre",
@@ -38,7 +38,7 @@ router.put('/', (req, res) => {
 //Update la liste
 router.post('/:id', (req,res) => {
   const {id} = req.params;
-  const {user} = req.body;
+  const {user} = req.body;v 
   const userToUpdate = _.find(users, ["id",id]);
   userToUpdate.user = user;
   res.json({
