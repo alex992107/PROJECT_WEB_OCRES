@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Clement extends Component {
+class Home extends Component {
   render() {
     //On récupère les données de l'API
     const { data } = this.props;
@@ -20,4 +20,4 @@ class Clement extends Component {
   }
 }
 
-export default Clement;
+export default Home;

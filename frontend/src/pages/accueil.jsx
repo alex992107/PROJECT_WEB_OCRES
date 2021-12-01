@@ -1,7 +1,7 @@
 import React from "react";
 
 import '../App.css';
-import ClementAPI from '../API/ClementAPI';
+import HomeAPI from '../API/HomeAPI';
 
 
 function Accueil(){
@@ -10,7 +10,7 @@ function Accueil(){
         <div className="Col80">
         <h1>Horaires des prochains départs</h1>
         <br/>
-        <ClementAPI/>
+        <HomeAPI/>
         </div>
         <div className="Col20">
           <div className="Col201">
@@ -18,7 +18,7 @@ function Accueil(){
           </div>    
           <div className="Col202">
           <h3>Nombre de requettes effectuées</h3>
-          <div className="pie" PerCent="10">
+          <div className="pie">
           </div>
           </div>   
         </div>    
