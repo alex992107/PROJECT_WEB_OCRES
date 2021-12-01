@@ -3,11 +3,12 @@ import React from "react";
 import '../App.css';
 import ClementAPI from '../API/ClementAPI';
 
+
 function Accueil(){
     return(
       <div className="Mid">
         <div className="Col80">
-        <h1>Col 1 80%</h1>
+        <h1>Horaires des prochains départs</h1>
         <br/>
         <ClementAPI/>
         </div>
@@ -17,8 +18,7 @@ function Accueil(){
           </div>    
           <div className="Col202">
           <h3>Nombre de requettes effectuées</h3>
-          <div className="pie" data-value="0">
-            1
+          <div className="pie" PerCent="10">
           </div>
           </div>   
         </div>    

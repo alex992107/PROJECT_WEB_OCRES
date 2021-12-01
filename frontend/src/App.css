@@ -43,8 +43,6 @@ body { padding: 0rem; }
   margin: auto;
 }
 
-
-
 .Navig{
   margin-left: 15%;
   display: grid;
@@ -56,7 +54,7 @@ body { padding: 0rem; }
   width: 30vw; 
   height: 30vh;
   border-radius: 50%;
-  background: conic-gradient(yellowgreen 10%, #655 0);
+  background: conic-gradient(yellowgreen 80%, #655 0);
 }
 
 /* Class de test pour voir les bordures des composants */
@@ -119,6 +117,12 @@ body { padding: 0rem; }
 }
 
 @media all and (max-width:900px){
+  .App{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    position:fixed;
+  }
   
   .Col201{
   display: none;
@@ -128,15 +132,17 @@ body { padding: 0rem; }
   display: none;
   }
 
-  .Row #title{
-    flex:60%;
-    width: 20vw;
-  }
-
   .Col80{
     background-color: red;
     width: 100%;
   }
+
+  /*
+  .Row #title{
+    flex:60%;
+    width: 20vw;
+  }
+  */
 }
 
 /* FIN */

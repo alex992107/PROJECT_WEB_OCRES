@@ -4,16 +4,17 @@ class Clement extends Component {
   render() {
     //On récupère les données de l'API
     const { data } = this.props;
-    console.log("data", data);
     if (!data) return null;
 
     //On parcoure l'arborescence jusqu'a la branche stop_date_time et on sélectionne departure_date_time
     const { departure_date_time } = data.stop_date_time;
-    console.log(departure_date_time)
+    const heure = departure_date_time.slice(9,11);
+    const min = departure_date_time.slice(11,13);
+    const sec = departure_date_time.slice(13,15);
     return (
-      //On affiche
       <div>
-        {departure_date_time}
+        <h4>{heure}:{min}:{sec}</h4>
+        <br/>
       </div>
     );
   }
