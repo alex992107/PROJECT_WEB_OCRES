@@ -1,15 +1,13 @@
 import React from "react";
 
 import '../App.css';
-import ClementAPI from '../components/Clement';
+import ClementAPI from '../API/ClementAPI';
 
 function Accueil(){
     return(
       <div className="Mid">
         <div className="Col80">
         <h1>Col 1 80%</h1>
-        <br/>
-        1 header titre h1 et un bloc en dessous
         <br/>
         <ClementAPI/>
         </div>

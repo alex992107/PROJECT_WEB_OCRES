@@ -22,17 +22,13 @@ class ClementAPI extends React.Component {
         //get récupère les données
           .get(`${URL_KEY}`)
           //stockées dans data
-          .then(({ data }) => {
-            console.log(data)
-            
+          .then(({ data }) => {           
             //dans l'arborescence du fichier json qu'est data on veut récupérer la branche departures
             const { departures } = data;
-            console.log(departures)
             
             //Departure est une liste composée de 9 listes
             //On récupère les 4 premières infos de départ
             const liste = [departures[0], departures[1], departures[2], departures[3], departures[4]];
-            console.log(liste)
             this.setState({ liste });
           })
           .catch(console.error);

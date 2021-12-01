@@ -28,13 +28,8 @@ function TopNav(){
           <Navbar.Text>
            Bienvenue, Clément Constantin !  
           </Navbar.Text>
-          </div>
-          <div className="Welcome">
-          <Navbar.Text>
-           Bienvenue !  
-          </Navbar.Text>
-          </div>
-          <Button variant="outlined" color="red">Se déconnecter</Button>
+        </div>
+        <Button variant="outlined" color="red">Se déconnecter</Button>
         </Navbar.Collapse> 
      </Navbar>
    </BrowserRouter>
