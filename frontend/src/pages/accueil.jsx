@@ -1,6 +1,7 @@
 import React from "react";
 
 import '../App.css';
+import ClementAPI from '../components/Clement';
 
 function Accueil(){
     return(
@@ -10,7 +11,7 @@ function Accueil(){
         <br/>
         1 header titre h1 et un bloc en dessous
         <br/>
-        1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9-1-2-3-4-5-6-7-8-9
+        <ClementAPI/>
         </div>
         <div className="Col20">
           <div className="Col201">
