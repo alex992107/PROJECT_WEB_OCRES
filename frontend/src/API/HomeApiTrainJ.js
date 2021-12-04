@@ -1,12 +1,12 @@
 //Imports
 import React from "react";
-import Home from "../components/Home";
+import HomeTrainJ from "../components/HomeTrainJ";
 import axios from "axios";
 
 //Url et la clef 
 const URL_KEY = "https://api.sncf.com/v1/coverage/sncf/lines/line%3ASNCF%3AA/stop_areas/stop_area%3ASNCF%3A87386573/departures?key=841d6f9d-c2de-4b6c-8a4d-047b0c8816a7";
 
-class HomeAPI extends React.Component {
+class HomeApiTrainJ extends React.Component {
     //On initialise le constructeur 
     constructor(props) {
         super(props);
@@ -52,4 +52,4 @@ class HomeAPI extends React.Component {
       }
     }
     
-export default HomeAPI;
+export default HomeApiTrainJ;
