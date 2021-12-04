@@ -8,6 +8,7 @@ import Vacance from './pages/vacance.jsx';
 import Rvacance from './pages/r_vacance.jsx';
 import Issues from './pages/issues.jsx'
 import Error from './pages/error.jsx'
+import Logout from './pages/logout.jsx'
 
 import './App.css';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/vacance" element={<Vacance/>}/>
                 <Route path="/r_vacance" element={<Rvacance/>}/>
                 <Route path="/issues" element={<Issues/>}/>
+                <Route path="/logout" element={<Logout/>}/>
                 <Route path="*" element={<Error/>}/>
               </Routes>
             </Router>

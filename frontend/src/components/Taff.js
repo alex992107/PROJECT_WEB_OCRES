@@ -7,7 +7,6 @@ class Taff extends Component {
     if (!data) return null;
 
     //On parcoure l'arborescence jusqu'a la branche stop_date_time et on sélectionne departure_date_time
-    console.log(data.date_time);
     const date_time = data.date_time ;
     const heure = date_time.slice(9,11);
     const min = date_time.slice(11,13);

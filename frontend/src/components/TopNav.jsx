@@ -8,7 +8,7 @@ import "../App.css";
 import accueil from '../pages/accueil.jsx';
 
 import {Navbar} from 'react-bootstrap'
-import Button from "@restart/ui/esm/Button";
+import Button from '@mui/material/Button';
 
 function TopNav(){
   return(
@@ -26,10 +26,10 @@ function TopNav(){
         <Navbar.Collapse className="justify-content-end">
         <div className="Name">
           <Navbar.Text>
-           Bienvenue, Clément Constantin !  
+           Bienvenue, Clément Constantin ! 
           </Navbar.Text>
         </div>
-        <Button variant="outlined" color="red">Se déconnecter</Button>
+        <Button variant="outlined" href="/logout">Se déconnecter</Button>
         </Navbar.Collapse> 
      </Navbar>
    </BrowserRouter>

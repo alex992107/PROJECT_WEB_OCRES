@@ -94,7 +94,6 @@ body { padding: 0rem; }
   color: white;
   justify-content: center;
   align-items: center;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
 .SideList .Row:hover{
@@ -136,6 +135,8 @@ body { padding: 0rem; }
     background-color: red;
     width: 100%;
   }
+
+  
 
   /*
   .Row #title{

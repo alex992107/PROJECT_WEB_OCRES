@@ -29,7 +29,6 @@ class HomeAPI extends React.Component {
             //Departure est une liste composée de 9 listes
             //On récupère les 5 premières infos de départ
             const liste = [departures[0], departures[1], departures[2], departures[3], departures[4],departures[5]];
-            console.log(liste);
             this.setState({ liste });
           })
           .catch(console.error);
@@ -39,11 +38,9 @@ class HomeAPI extends React.Component {
     
       render() {
         const { liste } = this.state;
-        
         if (!liste) return <p>Loading...</p>;
         return (
           <div>
-            
               {/* On envoie les données de chaque liste de départ a la classe Home */}
               {liste.map((ListeData, index) => {
                 return <Home key={index} data={ListeData} />;

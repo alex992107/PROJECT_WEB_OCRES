@@ -30,7 +30,6 @@ class TaffAPI extends React.Component {
             const {date_times} = data.terminus_schedules[2];
 
             const liste =[date_times[0],date_times[1],date_times[2],date_times[3],date_times[4],date_times[5]]
-            console.log(liste);
             this.setState({ liste });
           })
           .catch(console.error);
@@ -38,7 +37,6 @@ class TaffAPI extends React.Component {
 
       render() {
         const { liste } = this.state;
-
         if (!liste) return <p>Loading...</p>;
         return (
           <div>
