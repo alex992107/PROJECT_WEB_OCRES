@@ -2,13 +2,27 @@ var express = require('express');
 var router = express.Router();
 var _ = require('underscore');
 
-/* GET users listing. */
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+
+const users = new Schema(
+    {
+        name: { type: String, required: true },
+        villep: { type: String, required: true },
+        id: { type: Number, required: true },
+    },
+    { timestamps: true },
+)
+
+
+
+/* GET users listing. 
 const users =[
   {user:"Clément",
   id:"0"},
   {user:"Alexandre",
   id:"1"},
-];
+];*/
 
 //Afficher 
 router.get('/',(req,res) =>{
@@ -48,3 +62,4 @@ router.post('/:id', (req,res) => {
 
 
 module.exports = router;
+module.exports = mongoose.model('users', users)
