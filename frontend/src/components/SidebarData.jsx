@@ -1,11 +1,12 @@
 import React from "react";
-import AppsIcon from '@mui/icons-material/Apps'; //Apps
-import HomeIcon from '@mui/icons-material/Home'; //Maison
-import WorkIcon from '@mui/icons-material/Work'; //Taff
-import WbSunnyIcon from '@mui/icons-material/WbSunny'; //Vacances
-import LocationCityIcon from '@mui/icons-material/LocationCity'; //Retour
-import ReportProblemIcon from '@mui/icons-material/ReportProblem'; //Probleme
 
+//Import des logos 
+import AppsIcon from '@mui/icons-material/Apps'; //Accueil
+import StarIcon from '@mui/icons-material/Star'; //Etoile pour Poissy ECE
+import HomeIcon from '@mui/icons-material/Home'; //Maison pour ECE Poissy
+import LocationCityIcon from '@mui/icons-material/LocationCity'; //Batiment pour Poissy StLaz
+import CottageIcon from '@mui/icons-material/Cottage'; // Maison pour StLaz Poissy
+import SettingsIcon from '@mui/icons-material/Settings'; //Logo pour les réglages de l'API
 
 export const SidebarData =[
     {
@@ -14,28 +15,28 @@ export const SidebarData =[
         link:"/accueil",
     },
     {
-        title:"Maison",
+        title:"Poissy ECE",
+        icon:<StarIcon/>,
+        link:"/departPoissyRerA",
+    },
+    {
+        title:"ECE Poissy",
         icon:<HomeIcon/>,
-        link:"/home",
+        link:"/departEtoileRerA",
     },
     {
-        title:"Travail",
-        icon:<WorkIcon/>,
-        link:"/travail",
-    },
-    {
-        title:"Vacance",
-        icon:<WbSunnyIcon/>,
-        link:"/vacance",
-    },
-    {
-        title:"Retour Vacance",
+        title:"Poissy StLaz",
         icon:<LocationCityIcon/>,
-        link:"/r_vacance",
+        link:"/departPoissyTrainJ",
     },
     {
-        title:"Incidents",
-        icon:<ReportProblemIcon/>,
+        title:"StLaz Poissy",
+        icon:<CottageIcon/>,
+        link:"/departStLazTrainJ",
+    },
+    {
+        title:"Reglages",
+        icon:<SettingsIcon/>,
         link:"/issues",
     },
     

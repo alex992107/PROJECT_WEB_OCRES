@@ -8,6 +8,10 @@ body { padding: 0rem; }
   position: fixed;
 }
 
+.Align{
+  text-align: center;
+}
+
 .Content{
   display: flex;
   width: 100vw;
@@ -21,7 +25,6 @@ body { padding: 0rem; }
 .Col80{
   width: 60vw;
   text-align: center;
-  background-color: blue;
 }
 
 .Col20{
@@ -30,14 +33,12 @@ body { padding: 0rem; }
 
 .Col201{
   text-align: center;
-  background-color: white;
   width: 30vw;
   height: 45vh;
 }
 
 .Col202{
   text-align: center;
-  background-color: red;
   width: 30vw;
   height: 55vh;
   margin: auto;
@@ -57,17 +58,7 @@ body { padding: 0rem; }
   background: conic-gradient(yellowgreen 80%, #655 0);
 }
 
-/* Class de test pour voir les bordures des composants */
-.bordure{
-  border: solid red;
-  position: fixed;
-}
 
-/* No padding  = pas de bordure et position fixe = 1 screen en taille*/
-.nopadding {
-  padding: 0 ;
-  margin: 0;
-}
 
 /* Side Bar Css avec des fonctions de passages de souris et de selection */
 
@@ -132,11 +123,9 @@ body { padding: 0rem; }
   }
 
   .Col80{
-    background-color: red;
     width: 100%;
+    text-align: center;
   }
-
-  
 
   /*
   .Row #title{

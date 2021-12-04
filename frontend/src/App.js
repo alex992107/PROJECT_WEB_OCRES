@@ -23,10 +23,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Accueil/>}/>
                 <Route path="/accueil" element={<Accueil/>}/>
-                <Route path="/home" element={<Home/>}/>
-                <Route path="/travail" element={<Travail/>}/>
-                <Route path="/vacance" element={<Vacance/>}/>
-                <Route path="/r_vacance" element={<Rvacance/>}/>
+                <Route path="/departPoissyRerA" element={<Home/>}/>
+                <Route path="/departEtoileRerA" element={<Travail/>}/>
+                <Route path="/departPoissyTrainJ" element={<Vacance/>}/>
+                <Route path="/departStLazTrainJ" element={<Rvacance/>}/>
                 <Route path="/issues" element={<Issues/>}/>
                 <Route path="/logout" element={<Logout/>}/>
                 <Route path="*" element={<Error/>}/>
@@ -36,11 +36,5 @@ function App() {
       </div>
   );
 }
-
-//classname mid
-// dans mid 80/20%
-// dans  80 tas 20/80 horizontal
-// dans 20% tas 50/50 horizontal
-// dans les 2 50% tas 20/80 horizontal
 
 export default App;

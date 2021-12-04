@@ -5,23 +5,23 @@ import HomeApiTrainJ from "../API/HomeApiTrainJ";
 function Vacance(){
     return(
         <div className="Mid">
-        <div className="Col80">
-            <h1>Horaires des prochains départs</h1>
-            <br/>
-            <HomeApiTrainJ/>
-        </div>
-        <div className="Col20">
-            <div className="Col201">
-                <h2>Incidents</h2>
-                R.A.S
-            </div>    
-            <div className="Col202">
-                <h3>Nombre de requettes effectuées</h3>
-                <div className="pie">
-                </div>
+            <div className="Col80">
+                <h2>Horaires des prochains départs</h2>
+                <br/>
+                <HomeApiTrainJ/>
+            </div>
+            <div className="Col20">
+                <div className="Col201">
+                    <h3>Requettes effectuées</h3>
+                    <div className="pie">
+                    </div>
+                </div>  
+                <div className="Col202">
+                    <h3>Incidents signalés</h3>
+                    Aucun incident n'a été signalé sur votre ligne
+                </div>   
             </div>   
         </div>    
-</div>
     )
 }
 

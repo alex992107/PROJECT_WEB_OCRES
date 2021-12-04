@@ -29,6 +29,7 @@ class HomeApiTrainJ extends React.Component {
             const {date_times} = data.terminus_schedules[0];
 
             const liste =[date_times[0],date_times[1],date_times[2],date_times[3],date_times[4],date_times[5]]
+
             this.setState({ liste });
           })
           .catch(console.error);
