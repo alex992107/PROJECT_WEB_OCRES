@@ -4,7 +4,7 @@ import DateTime from "../components/DateTime";
 import axios from "axios";
 
 //Url et la clef 
-const URL_KEY = "https://api.sncf.com/v1/coverage/sncf/?key=841d6f9d-c2de-4b6c-8a4d-047b0c8816a7";
+const URL_KEY = "https://api.sncf.com/v1/coverage/sncf/lines/line%3ASNCF%3AA/?key=841d6f9d-c2de-4b6c-8a4d-047b0c8816a7";
 
 class DateTimeApi extends React.Component {
    //On initialise le constructeur 

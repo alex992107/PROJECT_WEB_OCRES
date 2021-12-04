@@ -1,11 +1,6 @@
 import React from "react";
 
 import '../App.css';
-import '../global';
-
-global.foo+=1;
-console.log("valeur in app",global.foo)
-
 
 function Accueil(){
     return(
@@ -32,8 +27,6 @@ function Accueil(){
                 <br/>
                 Train départ Saint Lazare direction Mantes-la-Jolie, arrêt à Poissy
                 <br/><br/>
-                
-                Incidents :
             </div>
             <div className="Col20"> 
                 <div className="Col201">
