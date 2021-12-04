@@ -12,7 +12,8 @@ function Home(){
             </div>
             <div className="Col20">
                 <div className="Col201">
-                    <h2>Col 2 -1 20%</h2>
+                    <h2>Incidents</h2>
+                    R.A.S
                 </div>    
                 <div className="Col202">
                     <h3>Nombre de requettes effectuées</h3>

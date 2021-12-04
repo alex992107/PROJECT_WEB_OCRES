@@ -1,10 +1,9 @@
-//Imports
 import React from "react";
 import HomeTrainJ from "../components/HomeTrainJ";
 import axios from "axios";
 
 //Url et la clef 
-const URL_KEY = "https://api.sncf.com/v1/coverage/sncf/lines/line%3ASNCF%3AA/stop_areas/stop_area%3ASNCF%3A87386573/departures?key=841d6f9d-c2de-4b6c-8a4d-047b0c8816a7";
+const URL_KEY = "https://api.sncf.com/v1/coverage/sncf/lines/line%3ASNCF%3AJ/stop_points/stop_point%3ASNCF%3A87386573%3ARapidTransit/terminus_schedules?key=841d6f9d-c2de-4b6c-8a4d-047b0c8816a7";
 
 class HomeApiTrainJ extends React.Component {
     //On initialise le constructeur 
@@ -24,18 +23,17 @@ class HomeApiTrainJ extends React.Component {
           //stockées dans data
           .then(({ data }) => {           
             //dans l'arborescence du fichier json qu'est data on veut récupérer la branche departures
-            const { departures } = data;
           
             //Departure est une liste composée de 9 listes
             //On récupère les 5 premières infos de départ
-            const liste = [departures[0], departures[1], departures[2], departures[3], departures[4],departures[5]];
+            const {date_times} = data.terminus_schedules[0];
+
+            const liste =[date_times[0],date_times[1],date_times[2],date_times[3],date_times[4],date_times[5]]
             this.setState({ liste });
           })
           .catch(console.error);
          };
-    
-    
-    
+
       render() {
         const { liste } = this.state;
         if (!liste) return <p>Loading...</p>;
@@ -43,10 +41,8 @@ class HomeApiTrainJ extends React.Component {
           <div>
               {/* On envoie les données de chaque liste de départ a la classe Home */}
               {liste.map((ListeData, index) => {
-                return <Home key={index} data={ListeData} />;
+                return <HomeTrainJ key={index} data={ListeData} />;
               })}
-             
-            
           </div>
         );
       }

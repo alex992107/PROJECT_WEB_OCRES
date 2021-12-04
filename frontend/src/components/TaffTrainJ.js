@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class HomeTrainJ extends Component {
+class TaffTrainJ extends Component {
   render() {
     //On récupère les données de l'API
     const { data } = this.props;
@@ -20,4 +20,4 @@ class HomeTrainJ extends Component {
   }
 }
 
-export default HomeTrainJ;
+export default TaffTrainJ;
