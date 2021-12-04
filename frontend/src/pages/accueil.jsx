@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../global'
 import '../App.css';
 
 function Accueil(){
@@ -37,6 +37,7 @@ function Accueil(){
                 <div className="Col202">
                     <h3>Incidents signalés</h3>
                     Aucun incident n'a été signalé sur votre ligne
+
                 </div> 
             </div>    
         </div>
