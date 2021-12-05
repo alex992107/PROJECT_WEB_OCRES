@@ -20,7 +20,8 @@ class HomeApiRerA extends React.Component {
       callAPI = Nvlkey => {
         axios
         .get(`${URL}key=${Nvlkey}`)
-        .then(({ data }) => {           
+        .then(({ data }) => {     
+          console.log(data)      
           const { departures } = data;
           // Recupere la propriété departures
           const liste = [departures[0], departures[1], departures[2], departures[3], departures[4],departures[5]];

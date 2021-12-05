@@ -8,6 +8,7 @@ import axios from "axios";
 //Url 
 const URL = "http://localhost:5000/users/";
 
+
 class MyApi extends React.Component {
    //On initialise le constructeur 
    constructor(props) {
@@ -16,15 +17,18 @@ class MyApi extends React.Component {
       liste: null
     };
   }
+
+
   //Call API
-  callAPI = Nvlkey => {
+  callAPI = Nvxnom => {
     axios
     .get(`${URL}`)
     .then(({ data }) => {
-        console.log(data);
-      const {current_datetime} = data.context
+        console.log(Nvxnom);
+      const {_id} = data[0]
+      console.log(data)
       // Recupere la propriété data.context
-      const liste =[current_datetime]
+      const liste =[_id]
       // On met la valeur current_datetime dans une liste pour utiliser le même template pour toutes les API
       this.setState({ liste });
     })
@@ -33,15 +37,15 @@ class MyApi extends React.Component {
   
   // Lance un appel au lancement du component
   componentDidMount(){
-    const {Nvlkey} = this.props;
-    this.callAPI(Nvlkey);
+    const {Nvxnom} = this.props;
+    this.callAPI(Nvxnom);
      };
 
   // A chaque update relance l'api
   componentDidUpdate(nextProps) {
     // Ici on verifie que la mise à jour concerne bien le champ de la clé
-    if (nextProps.Nvlkey !== this.props.Nvlkey) {
-    this.callAPI(nextProps.Nvlkey);
+    if (nextProps.Nvxnom !== this.props.Nvxnom) {
+    this.callAPI(nextProps.Nvxnom);
     }
   }
 

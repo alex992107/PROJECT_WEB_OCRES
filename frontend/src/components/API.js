@@ -7,15 +7,13 @@ class API extends Component {
     if (!data) return null;
 
     //On parcoure l'arborescence et on sélectionne current_datetime
-    const current_datetime = data
-    const heure = current_datetime.slice(9,11)
-    const min = current_datetime.slice(11,13)
-    const sec = current_datetime.slice(13,15)
+    const _id = data
+    
     //On sépare la chaine de caractère en 3 strings, heure, min et sec avant de les afficher
     
     return (
       <div>
-          Heure utilisé : <br/>{heure}:{min}:{sec}
+          UsersID <br/>{_id}
       </div>
     )
   }
