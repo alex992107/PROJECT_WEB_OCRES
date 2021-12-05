@@ -12,6 +12,10 @@ import Error from './pages/error.jsx'
 import './App.css';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+//Fonction d'appel de nos widgets en fonction des routes
+//Navbar et Sidebar toujours affichés, seul la les widgets changent en fonction de la route 
+//La route * pointe sur toutes les autres valeurs de routes que celle présente dans le code, la route * pointe sur la page d'erreur. 
+
 function App() {
   return (
       <div className="App">
