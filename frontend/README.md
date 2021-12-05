@@ -64,8 +64,7 @@ Inspiration d'un dashboard existant mais nous n'avons finalement repris (l'idée
 
 Pas d'utilisation de Trello, nous avons essayer de fonctionner en gestion Agile comme étudier en cours.
 Début de travaille 1 mois avant le rendu, réunion sprint ts les 3 jours max + tous les jours 1 semaine et demi avant le rendu
-Boucle scrum en fonction des capacités et des dispo du binôme
-
+Boucle scrum en fonction des capacités et des dispo du binôme.
 1er semaine : Création des blocs en CSS pour le binôme <br/>
 2nd semaine : Création des routes et de la side bar pour Clément, responsive - mediaquerry pour Alexandre <br/>
 3ème semaine : Création des requêtes API et début des widgets pour Clément<br/>
