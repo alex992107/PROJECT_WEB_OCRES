@@ -8,7 +8,7 @@ Ce projet a pour but d'afficher les horaires des 6 prochains trains :
 
 ## Organisation de la page
 
-1- Ecran fixe
+1- Ecran fixe <br/>
 2- Barre de navigation
 2- Contenu de la page
 3- Side barre
