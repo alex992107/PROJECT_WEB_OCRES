@@ -57,3 +57,7 @@ Leur MAJ sur le frontend du dashboard s'effectue mais les data ne change pas car
 Nous avons choisis de ne pas utiliser bootstrap pour l'arrengement de notre interface car le css natif dispose des mêmes fonctionnalités que bootstrap 5.
 Par manque de connaissance nous avons quand même importé la totalité de la librairie bootstrap mais nous ne l'utilisons que pour notre barre supérieur.
 Bootstrap est une librairie lourde qui n'est pas forcément utile quand son utilisation peut être remplacer par le css natif.
+
+Relflexion de l'interface sur Figma :
+https://www.figma.com/file/3sWKzwr1VT9i5OcA12Hg7N/Web-Dashboard?node-id=0%3A1
+Inspiration d'un dashboard existant mais nous n'avons finalement repris (l'idée graphique et pas le code) que la side bar
