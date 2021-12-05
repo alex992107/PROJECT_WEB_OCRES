@@ -34,18 +34,18 @@ Ce site nous permet de tester les requettes API (comme sur Postman) mais avec de
 
 ## Lancer le projet
 
-Dans le terminal :
+Dans le terminal :<br/>
 cd .\frontend\
 npm start
 
 Sur votre navigateur :
 http://localhost:3000/ ou http://192.168.1.54:3000/
 
-Pour la partie Backend:
+Pour la partie Backend:<br/>
 cd.\backend\
 npm start
 
-sur votre navigateur:
+Sur votre navigateur:
 http://localhost:5000/ ou http://127.0.0.1:5000
 pensez à activé l'extension chrome mode développeur
 
@@ -64,7 +64,7 @@ Inspiration d'un dashboard existant mais nous n'avons finalement repris (l'idée
 
 Pas d'utilisation de Trello, nous avons essayé de fonctionner en gestion Agile comme étudié en cours.
 Début de travaille 1 mois avant le rendu, réunion sprint ts les 3 jours max + tous les jours 1 semaine et demi avant le rendu
-Boucle scrum en fonction des capacités et des dispo du binôme sur les différents points :
+Boucle scrum en fonction des capacités et des dispo du binôme sur les différents points :<br/>
 1er semaine : Création des blocs en CSS pour le binôme <br/>
 2nd semaine : Création des routes et de la side bar pour Clément, responsive - mediaquerry pour Alexandre <br/>
 3ème semaine : Création des requêtes API et début des widgets pour Clément, création backend MongoDB et express<br/>
