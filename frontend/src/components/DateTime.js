@@ -13,7 +13,7 @@ class DateTime extends Component {
     const sec = current_datetime.slice(13,15)
     return (
       <div>
-          Heure utilisé : {heure}:{min}:{sec}
+          Heure utilisé : <br/>{heure}:{min}:{sec}
       </div>
     )
   }

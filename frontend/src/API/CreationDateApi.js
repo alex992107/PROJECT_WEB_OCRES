@@ -1,12 +1,12 @@
 //Imports
 import React from "react";
-import Timezone from "../components/Timezone";
+import CreationDate from "../components/CreationDate";
 import axios from "axios";
 
 //Url et la clef 
-const URL = "https://api.sncf.com/v1/coverage/sncf/lines/line%3ASNCF%3AA/?";
+const URL = "https://api.sncf.com/v1/coverage/sncf/?"
 
-class TimezoneApi extends React.Component {
+class CreationDateApi extends React.Component {
    //On initialise le constructeur 
    constructor(props) {
     super(props);
@@ -14,13 +14,12 @@ class TimezoneApi extends React.Component {
       liste: null
     };
   }
-
   callAPI = Nvlkey => {
     axios
     .get(`${URL}key=${Nvlkey}`)
-    .then(({ data }) => {           
-      const {timezone} = data.context
-      const liste =[timezone]
+    .then(({ data }) => {
+      const {dataset_created_at} = data.regions[0]
+      const liste =[dataset_created_at]           
       this.setState({ liste });
     })
     .catch(console.error);
@@ -36,23 +35,17 @@ class TimezoneApi extends React.Component {
     this.callAPI(nextProps.Nvlkey);
     }
   }
-
- 
-       
-       
-
   render() {
     const { liste } = this.state;
     if (!liste) return <p>Loading...</p>;
     return (
       <div>
-          {/* On envoie les données de chaque liste de départ a la classe Home */}
           {liste.map((ListeData, index) => {
-            return <Timezone key={index} data={ListeData} />;
+            return <CreationDate key={index} data={ListeData} />;
           })}
       </div>
     );
   }
     }
     
-export default TimezoneApi;
+export default CreationDateApi;

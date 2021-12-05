@@ -1,6 +1,5 @@
 //Imports
 import React from "react";
-import '../global'
 import HomeRerA from "../components/HomeRerA";
 import axios from "axios";
  
@@ -17,9 +16,9 @@ class HomeApiRerA extends React.Component {
         };
       }
       
-      NewKEY = APIKEY => {
+      callAPI = Nvlkey => {
         axios
-        .get(`${URL}key=${APIKEY}`)
+        .get(`${URL}key=${Nvlkey}`)
         .then(({ data }) => {           
           const { departures } = data;
           const liste = [departures[0], departures[1], departures[2], departures[3], departures[4],departures[5]];
@@ -29,13 +28,13 @@ class HomeApiRerA extends React.Component {
        };
       
       componentDidMount(){
-        const {APIKEY} = this.props;
-        this.NewKEY(APIKEY);
+        const {Nvlkey} = this.props;
+        this.callAPI(Nvlkey);
          };
 
       componentDidUpdate(nextProps) {
-      if (nextProps.APIKEY !== this.props.APIKEY) {
-        this.NewKEY(nextProps.APIKEY);
+      if (nextProps.Nvlkey !== this.props.Nvlkey) {
+        this.callAPI(nextProps.Nvlkey);
         }
       }
     

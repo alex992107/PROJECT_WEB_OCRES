@@ -4,7 +4,7 @@ import DateKey from "../components/DateKey";
 import axios from "axios";
 
 //Url et la clef 
-const URL_KEY = "https://api.sncf.com/v1/coverage/sncf/?key=841d6f9d-c2de-4b6c-8a4d-047b0c8816a7";
+const URL= "https://api.sncf.com/v1/coverage/sncf/?";
 
 class DateKeyApi extends React.Component {
    //On initialise le constructeur 
@@ -15,26 +15,28 @@ class DateKeyApi extends React.Component {
     };
   }
 
-  //Lance la fonction une fois 
-  componentDidMount(){
-    // Call API
+  callAPI = Nvlkey => {
     axios
-    //get récupère les données
-      .get(`${URL_KEY}`)
-      //stockées dans data
-      .then(({ data }) => {           
-        //dans l'arborescence du fichier json qu'est data on veut récupérer la branche departures
-      
-        //Departure est une liste composée de 9 listes
-        //On récupère les 5 premières infos de départ
-        const {end_production_date} = data.regions[0]
-
-        const liste =[end_production_date]
-        this.setState({ liste });
-      })
-      .catch(console.error);
+    .get(`${URL}key=${Nvlkey}`)
+    .then(({ data }) => {
+      const {end_production_date} = data.regions[0]
+      const liste =[end_production_date]          
+      this.setState({ liste });
+    })
+    .catch(console.error);
+   };
+  
+  componentDidMount(){
+    const {Nvlkey} = this.props;
+    this.callAPI(Nvlkey);
      };
 
+     componentDidUpdate(nextProps) {
+      if (nextProps.Nvlkey !== this.props.Nvlkey) {
+        this.callAPI(nextProps.Nvlkey);
+        }
+      }
+  
   render() {
     const { liste } = this.state;
     if (!liste) return <p>Loading...</p>;

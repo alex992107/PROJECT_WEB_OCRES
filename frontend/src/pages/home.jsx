@@ -1,49 +1,33 @@
 import React from "react";
-import ReactDOM from 'react-dom';
 import '../App.css';
 import HomeApiRerA from '../API/HomeApiRerA';
 
-var KEY ="841d6f9d-c2de-4b6c-8a4d-047b0c8816a7";
 
 
 class Home extends React.Component{
+    state = {clé : "841d6f9d-c2de-4b6c-8a4d-047b0c8816a7"}
 
-    state = {
-        KEY
-    }
-
-    handleChange(event) {
-        var value = event.target.value;
-        KEY = event.target.value;
-        this.setState({
-            value
-        });
-      }
-    
-      affichage(){
-          console.log(KEY);
-          ReactDOM.hydrate(<HomeApiRerA APIKEY={KEY}/>, document.getElementById('root'));
-      }
-
-      refreshPage(){ 
-        window.location.reload(); 
-    }
+    handleChange = event => {this.setState({clé : event.target.value});}
     
 render(){
+    const {clé} = this.state;
+    
     return(
         <div className="Mid">
             <div className="Col80">
                 <h2>Horaires des prochains départs</h2>
-                <button onClick={this.refreshPage }>Afficher les horaires</button>
                 <br/>
-                <HomeApiRerA APIKEY={KEY}/>
+                <HomeApiRerA Nvlkey={clé}/>
+                {console.log(clé)}
             
             </div>
             <div className="Col20">
                 <div className ="Col201">
                 <h3> Entrez la nouvelle clé API :</h3>
-                <input type="text" value={KEY}
-                onChange={event => this.handleChange(event)}
+                <input 
+                    type="text" 
+                    value={clé}
+                    onChange={this.handleChange}
                 />
             </div>
             <div className="Col202">
