@@ -1,5 +1,6 @@
 import React from "react";
 import '../App.css';
+import MyApi from "../API/MyApi";
 
 //Page d'accueil
 
@@ -41,6 +42,7 @@ function Accueil(){
                 <div className="Col202">
                     <h3>API MongoDB</h3>
                     CRUD
+                    <MyApi/>
                 </div> 
             </div>    
         </div>
