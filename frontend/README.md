@@ -9,20 +9,20 @@ Ce projet a pour but d'afficher les horaires des 6 prochains trains :
 ## Organisation de la page
 
 1- Ecran fixe <br/>
-2- Barre de navigation
-2- Contenu de la page
-3- Side barre
-3- Zone pour afficher des données
-4- Colonne 80% de la zone
-5- Titre
-5- Data API
-4- Colonne 20% de la zone
-5- Bloc 50% en hauteur de la colonne
-6- Titre
-6- Graphique ou swap clé API
-5- Bloc 50% en hauteur de la colonne
-6- Titre
-6- API MongoDB ou Incidents
+2- Barre de navigation <br/>
+2- Contenu de la page <br/>
+3- Side barre <br/>
+3- Zone pour afficher des données <br/>
+4- Colonne 80% de la zone <br/>
+5- Titre <br/>
+5- Data API <br/>
+4- Colonne 20% de la zone <br/>
+5- Bloc 50% en hauteur de la colonne <br/>
+6- Titre <br/>
+6- Graphique ou swap clé API <br/>
+5- Bloc 50% en hauteur de la colonne <br/>
+6- Titre <br/>
+6- API MongoDB ou Incidents <br/>
 
 Notre barre de navigation superieur est un composant bootstrap qui est seulement graphique, nous avons choisis d'utiliser une side barre pour la navigation entre nos pages.
 Notre side barre est un composant react.
