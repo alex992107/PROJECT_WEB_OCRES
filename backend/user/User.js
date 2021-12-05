@@ -1,4 +1,6 @@
 var mongoose = require("mongoose");
+
+//parametres utilisateurs
 var UserSchema = new mongoose.Schema({
   name: String,
   email: String,
