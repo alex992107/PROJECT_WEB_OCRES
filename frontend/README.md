@@ -66,7 +66,7 @@ Pas d'utilisation de Trello, nous avons essayer de fonctionner en gestion Agile 
 Début de travaille 1 mois avant le rendu, réunion sprint ts les 3 jours max + tous les jours 1 semaine et demi avant le rendu
 Boucle scrum en fonction des capacités et des dispo du binôme
 
-1er semaine :
-2nd semaine :
-3ème semaine :
-4ème semaine :
+1er semaine : Création des blocs en CSS pour Clément, gestion du responsive pour Alexandre
+2nd semaine : Création des routes et de la side bar pour Clément,
+3ème semaine : Création des requêtes API
+4ème semaine : Création du  widget changement de clé et du graphique pour Clément, gestion backend pour Alexandre
