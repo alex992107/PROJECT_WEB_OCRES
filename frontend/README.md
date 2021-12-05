@@ -62,10 +62,10 @@ Relflexion de l'interface sur Figma :
 https://www.figma.com/file/3sWKzwr1VT9i5OcA12Hg7N/Web-Dashboard?node-id=0%3A1
 Inspiration d'un dashboard existant mais nous n'avons finalement repris (l'idée graphique et pas le code) que la side bar
 
-Pas d'utilisation de Trello, nous avons essayer de fonctionner en gestion Agile comme étudier en cours.
+Pas d'utilisation de Trello, nous avons essayé de fonctionner en gestion Agile comme étudié en cours.
 Début de travaille 1 mois avant le rendu, réunion sprint ts les 3 jours max + tous les jours 1 semaine et demi avant le rendu
-Boucle scrum en fonction des capacités et des dispo du binôme.
+Boucle scrum en fonction des capacités et des dispo du binôme sur les différents points :
 1er semaine : Création des blocs en CSS pour le binôme <br/>
 2nd semaine : Création des routes et de la side bar pour Clément, responsive - mediaquerry pour Alexandre <br/>
-3ème semaine : Création des requêtes API et début des widgets pour Clément<br/>
-4ème semaine : Finalisation des widgets, création du widget changement de clé et du graphique pour Clément, gestion backend pour Alexandre
+3ème semaine : Création des requêtes API et début des widgets pour Clément, création backend MongoDB et express<br/>
+4ème semaine : Finalisation des widgets, création du widget changement de clé et du graphique pour Clément, finilisation du backend pour Alexandre
