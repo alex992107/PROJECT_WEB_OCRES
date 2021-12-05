@@ -61,3 +61,12 @@ Bootstrap est une librairie lourde qui n'est pas forcément utile quand son util
 Relflexion de l'interface sur Figma :
 https://www.figma.com/file/3sWKzwr1VT9i5OcA12Hg7N/Web-Dashboard?node-id=0%3A1
 Inspiration d'un dashboard existant mais nous n'avons finalement repris (l'idée graphique et pas le code) que la side bar
+
+Pas d'utilisation de Trello, nous avons essayer de fonctionner en gestion Agile comme étudier en cours.
+Début de travaille 1 mois avant le rendu, réunion sprint ts les 3 jours max + tous les jours 1 semaine et demi avant le rendu
+Boucle scrum en fonction des capacités et des dispo du binôme
+
+1er semaine :
+2nd semaine :
+3ème semaine :
+4ème semaine :
