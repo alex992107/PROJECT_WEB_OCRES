@@ -3,7 +3,6 @@ import CreationDateApi from "../API/CreationDateApi"
 import DateKeyApi from "../API/DateKeyApi";
 import TimezoneApi from "../API/TimezoneApi";
 import DateTimeApi from "../API/DateTimeApi";
-import '../App.css';
 
 
 class Issues extends React.Component{

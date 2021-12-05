@@ -1,5 +1,4 @@
 import React from "react";
-import '../global'
 import '../App.css';
 
 function Accueil(){
@@ -35,8 +34,8 @@ function Accueil(){
                     </div>
                 </div>  
                 <div className="Col202">
-                    <h3>Incidents signalés</h3>
-                    Aucun incident n'a été signalé sur votre ligne
+                    <h3>API MongoDB</h3>
+                    CRUD
 
                 </div> 
             </div>    

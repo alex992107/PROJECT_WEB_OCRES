@@ -1,5 +1,4 @@
 import React from "react";
-import '../App.css';
 import TaffApiTrainJ from "../API/TaffApiTrainJ";
 
 function r_vacance(){

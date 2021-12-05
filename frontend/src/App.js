@@ -9,7 +9,6 @@ import Rvacance from './pages/r_vacance.jsx';
 import Issues from './pages/issues.jsx'
 import Error from './pages/error.jsx'
 
-
 import './App.css';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
