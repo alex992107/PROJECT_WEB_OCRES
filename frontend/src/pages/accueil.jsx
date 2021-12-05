@@ -2,6 +2,8 @@ import React from "react";
 import '../App.css';
 import MyApi from "../API/MyApi";
 
+import Graph from "../components/Graph";
+
 //Page d'accueil
 
 //Explication de route de la side barre 
@@ -10,6 +12,8 @@ import MyApi from "../API/MyApi";
 
 class Accueil extends React.Component{
     state = {nom : "0"}
+
+
 
     //Fonction permettant de mettre à jour la valeur de la clé
     handleChange = event => {this.setState({nom : event.target.value});}
@@ -42,11 +46,12 @@ class Accueil extends React.Component{
                   </div>
                   <div className="Col20"> 
                       <div className="Col201">
-                          <h3>Requettes effectuées</h3>
+                            <h3>Requettes effectuées</h3>
+                            <Graph/>
                       </div>  
                       <div className="Col202">
                             <h3>API MongoDB</h3>
-                            <MyApi Nvxnom={0}/>
+                            <MyApi Nvxnom={nom}/>
                       </div> 
                   </div>    
               </div>
