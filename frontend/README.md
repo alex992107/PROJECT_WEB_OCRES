@@ -41,3 +41,13 @@ npm start
 
 Sur votre navigateur :
 http://localhost:3000/ ou http://192.168.1.54:3000/
+
+
+## Bugs et problèmes et décisions
+
+Toutes les clés API ont la même date de fin d'utilisation, cette date se met à jour à 00h01 (heure serveur) et s'incrémente.
+Leur MAJ sur le frontend du dashboard s'effectue mais les data ne change pas car elles sont similaires. Cependant, dans l'outil de dev, une erreur apparaît si la clé ne fonctionne pas.
+
+Nous avons choisis de ne pas utiliser bootstrap pour l'arrengement de notre interface car le css natif dispose des mêmes fonctionnalités que bootstrap 5. 
+Par manque de connaissance nous avons quand même importé la totalité de la librairie bootstrap mais nous ne l'utilisons que pour notre barre supérieur.
+Bootstrap est une librairie lourde qui n'est pas forcément utile quand son utilisation peut être remplacer par le css natif.

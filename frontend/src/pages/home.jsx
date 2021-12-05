@@ -16,8 +16,9 @@ render(){
             <div className="Col80">
                 <h2>Horaires des prochains départs (Gare Poissy)</h2>
                 <br/>
+                <div className="Affichage">
                 <HomeApiRerA Nvlkey={clé}/>
-                {console.log(clé)}
+                </div>
             
             </div>
             <div className="Col20">

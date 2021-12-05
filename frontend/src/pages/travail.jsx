@@ -14,7 +14,9 @@ class Travail extends React.Component{
             <div className="Col80">
                 <h2>Horaires des prochains départs (CDG Etoile)</h2>
                 <br/>
+                <div className="Affichage">
                 <TaffApiRerA Nvlkey={clé}/>
+                </div>
             </div>
             <div className="Col20">
                 <div className ="Col201">

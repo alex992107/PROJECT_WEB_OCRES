@@ -14,7 +14,9 @@ class Vacance extends React.Component{
             <div className="Col80">
                 <h2>Horaires des prochains départs (Gare Poissy)</h2>
                 <br/>
+                <div className="Affichage">
                 <HomeApiTrainJ Nvlkey={clé}/>
+                </div>
             </div>
             <div className="Col20">
                 <div className ="Col201">

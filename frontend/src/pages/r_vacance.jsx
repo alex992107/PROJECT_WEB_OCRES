@@ -14,7 +14,9 @@ class r_vacance extends React.Component{
         <div className="Col80">
             <h2>Horaires des prochains départs (Saint Lazare)</h2>
             <br/>
+            <div className="Affichage">
             <TaffApiTrainJ Nvlkey={clé}/>
+            </div>
         </div>
         <div className="Col20">
                 <div className ="Col201">

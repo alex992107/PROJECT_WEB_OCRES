@@ -7,6 +7,7 @@ function Accueil(){
         <div className="Mid">
             <div className="Col80">
                 <h1>Affichage</h1>
+                <div className="Affichage">
                 Poissy-ECE : 
                 <br/>
                 RER départ Poissy direction Marne-la-Vallée Chessy ou Boissy-Saint-Léger, arrêt à Étoile
@@ -26,6 +27,7 @@ function Accueil(){
                 <br/>
                 Train départ Saint Lazare direction Mantes-la-Jolie, arrêt à Poissy
                 <br/><br/>
+                </div>
             </div>
             <div className="Col20"> 
                 <div className="Col201">
