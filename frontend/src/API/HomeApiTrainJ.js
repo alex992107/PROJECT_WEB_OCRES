@@ -3,7 +3,7 @@ import HomeTrainJ from "../components/HomeTrainJ";
 import axios from "axios";
 
 //Url et la clef 
-const URL_KEY = "https://api.sncf.com/v1/coverage/sncf/lines/line%3ASNCF%3AJ/stop_points/stop_point%3ASNCF%3A87386573%3ARapidTransit/terminus_schedules?key=841d6f9d-c2de-4b6c-8a4d-047b0c8816a7";
+const URL = "https://api.sncf.com/v1/coverage/sncf/lines/line%3ASNCF%3AJ/stop_points/stop_point%3ASNCF%3A87386573%3ARapidTransit/terminus_schedules?";
 
 class HomeApiTrainJ extends React.Component {
     //On initialise le constructeur 
@@ -13,28 +13,32 @@ class HomeApiTrainJ extends React.Component {
           liste: null
         };
       }
-    
-      //Lance la fonction une fois 
-      componentDidMount(){
-        // Call API
+
+      callAPI = Nvlkey => {
         axios
-        //get récupère les données
-          .get(`${URL_KEY}`)
-          //stockées dans data
-          .then(({ data }) => {           
-            //dans l'arborescence du fichier json qu'est data on veut récupérer la branche departures
-          
-            //Departure est une liste composée de 9 listes
-            //On récupère les 5 premières infos de départ
-            const {date_times} = data.terminus_schedules[0];
-
-            const liste =[date_times[0],date_times[1],date_times[2],date_times[3],date_times[4],date_times[5]]
-
-            this.setState({ liste });
-          })
-          .catch(console.error);
+        .get(`${URL}key=${Nvlkey}`)
+        .then(({ data }) => {           
+          const {date_times} = data.terminus_schedules[0];
+          const liste =[date_times[0],date_times[1],date_times[2],date_times[3],date_times[4],date_times[5]]
+          this.setState({ liste });
+        })
+        .catch(console.error);
+       };
+      
+      componentDidMount(){
+        const {Nvlkey} = this.props;
+        this.callAPI(Nvlkey);
          };
 
+      componentDidUpdate(nextProps) {
+      if (nextProps.Nvlkey !== this.props.Nvlkey) {
+        this.callAPI(nextProps.Nvlkey);
+        }
+      }
+      
+    
+      
+           
       render() {
         const { liste } = this.state;
         if (!liste) return <p>Loading...</p>;
