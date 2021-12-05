@@ -1,13 +1,43 @@
-# Frontend
+Projet DashBoard SNCF LARNAUDIE et CONSTANTIN
 
-Ce dossier contiendra la partie frontend de votre projet.
+Ce projet a pour but d'afficher les horaires des 6 prochains trains :
+-départ Poissy, direction Marne-la-Vallée ou Boissy, arrêt CDG-Etoile (RER A)
+-départ CDG-Etoile, direction Poissy (RER A)
+-départ Poissy, direction Paris Saint-Lazare (Ligne J)
+-départ Paris Saint-Lazare, direction Mantes-la-Jolie, arrêt Poissy (Ligne J)
 
-Le frontend à été initalisé avec un create-react-app et stotrybook y est deja installé avec un exemple de stories que vous trouverez dans le repertoire `src/stories`.
+## Organisation de la page
 
-Storybook est là pour vous aider à prototyper et documenter vos composants. Si nous n'arrivons pas à lancer votre projet, nous pourrons au moins regarder vos composants en fonctionnement.
+1- Ecran fixe
+    2- Barre de navigation
+    2- Contenu de la page
+        3- Side barre
+        3- Zone pour afficher des données
+            4- Colonne 80% de la zone
+                5- Titre
+                5- Data API
+            4- Colonne 20% de la zone
+                5- Bloc 50% en hauteur de la colonne
+                    6- Titre
+                    6- Graphique ou swap clé API
+                5- Bloc 50% en hauteur de la colonne
+                    6- Titre
+                    6-  API MongoDB ou Incidents
 
-## Documentation
+Notre barre de navigation superieur est un composant bootstrap qui est seulement graphique, nous avons choisis d'utiliser une side barre pour la navigation entre nos pages.
+Notre side barre est un composant react.
 
-Vous pourrez supprimer le contenu de ce README et vous l'approprier en y notant les éléments importants de votre projet. Il est très important de bien documenter un projet !
+Nous avons choisis d'utiliser la librairie MUI pour nos logos pour sa simplicité.
 
-Inspirez-vous des grands repos open sources qui existent sur github. Les informations qui reviennent souvent sont une description du projet (pourquoi, comment...), la maniere de lancer le projet et eventuellement d'y contribuer, une documentation sur des éléments que vous voulez mettre en avant et pour finir les noms des contributeurs.
+La documentation de l'API est disponible sur : http://doc.navitia.io/#getting-started et grâce au playground : http://canaltp.github.io/navitia-playground/play.html?request=https%3A%2F%2Fapi.sncf.com%2Fv1%2Fcoverage%2Fsncf%2F%3F&token=841d6f9d-c2de-4b6c-8a4d-047b0c8816a7
+Ce site nous permet de tester les requettes API (comme sur Postman) mais avec des fonctionnalités supplementaires très utiles pour créer nos requettes.
+
+
+## Lancer le projet 
+
+Dans le terminal :
+cd .\frontend\
+npm start
+
+Sur votre navigateur :
+http://localhost:3000/ ou http://192.168.1.54:3000/

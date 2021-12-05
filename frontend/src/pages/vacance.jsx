@@ -19,6 +19,7 @@ class Vacance extends React.Component{
             <div className="Col20">
                 <div className ="Col201">
                 <h3> Entrez la nouvelle clé API :</h3>
+                <br/><br/>
                 <input 
                     type="text" 
                     value={clé}

@@ -106,7 +106,7 @@ body { padding: 0rem; }
   flex:70%;
 }
 
-@media all and (max-width:900px){
+@media all and (max-width:1000px){
   .App{
     width: 100vw;
     height: 100vh;

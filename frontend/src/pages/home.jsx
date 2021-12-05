@@ -14,7 +14,7 @@ render(){
     return(
         <div className="Mid">
             <div className="Col80">
-                <h2>Horaires des prochains départs</h2>
+                <h2>Horaires des prochains départs (Gare Poissy)</h2>
                 <br/>
                 <HomeApiRerA Nvlkey={clé}/>
                 {console.log(clé)}
@@ -23,6 +23,7 @@ render(){
             <div className="Col20">
                 <div className ="Col201">
                 <h3> Entrez la nouvelle clé API :</h3>
+                <br/><br/>
                 <input 
                     type="text" 
                     value={clé}
