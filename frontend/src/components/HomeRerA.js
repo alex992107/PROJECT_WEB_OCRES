@@ -11,6 +11,8 @@ class HomeRerA extends Component {
     const heure = departure_date_time.slice(9,11);
     const min = departure_date_time.slice(11,13);
     const sec = departure_date_time.slice(13,15);
+    //On sépare la chaîne de caractère pour obtenir les horaires, heure, min, sed avant de les afficher
+    
     return (
       <div>
         <h4>{heure}:{min}:{sec}</h4>

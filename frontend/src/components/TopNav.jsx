@@ -1,14 +1,18 @@
 import React from "react";
-import TrainIcon from '@mui/icons-material/Train';
-
-import {BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import {Navbar} from 'react-bootstrap';
 import "../App.css";
-
 import accueil from '../pages/accueil.jsx';
 
-import {Navbar} from 'react-bootstrap'
+//Icone de la librairie MUI
+import TrainIcon from '@mui/icons-material/Train';
 
+//Import pour gérer les routes
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
+
+//Cette fonction permet l'affichage de notre barre supérieur de navigation
+//On y ajoute un titre, un logo et une route
+//Cette fonction est plutôt graphique, elle permet de structurer le dashboard
+//Cest la seul qui utilise la librairie bootstrap pour fonctionner, en effet {Navbar} est un composant de cette lib
 function TopNav(){
   return(
     <BrowserRouter>

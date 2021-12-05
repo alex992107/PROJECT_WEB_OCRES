@@ -1,14 +1,20 @@
 import React from "react";
+import '../App.css';
 import HomeApiRerA from '../API/HomeApiRerA';
 
+//Page HOME = Départ RER A Poissy
 
+//Sur cette page on affiche les data de notre API (départ RER A depuis Poissy)
+//On propose aussi à l'utilisateur de pouvoir changer sa clé API
+//On affiche, en dur, les incidents sur la ligne
 
 class Home extends React.Component{
     state = {clé : "841d6f9d-c2de-4b6c-8a4d-047b0c8816a7"}
 
+    //Fonction permettant de mettre à jour la valeur de la clé
     handleChange = event => {this.setState({clé : event.target.value});}
     
-render(){
+    render(){
     const {clé} = this.state;
     
     return(
@@ -19,7 +25,6 @@ render(){
                 <div className="Affichage">
                 <HomeApiRerA Nvlkey={clé}/>
                 </div>
-            
             </div>
             <div className="Col20">
                 <div className ="Col201">
@@ -37,8 +42,7 @@ render(){
                 </div>   
             </div>    
     </div>
-    )
-}
+    )}
 }
 
 export default Home

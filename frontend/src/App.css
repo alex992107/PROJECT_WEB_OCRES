@@ -1,3 +1,5 @@
+/*Fichier CSS  */
+
 html { font-size: 22px; }
 body { padding: 0rem; }
 
@@ -12,6 +14,7 @@ body { padding: 0rem; }
   text-align: center;
 }
 
+/*Bloc content - Bloc pour afficher toutes noes données*/
 .Content{
   display: flex;
   width: 100vw;
@@ -22,21 +25,25 @@ body { padding: 0rem; }
   display: flex;
   }
 
+/*Colonne 80%*/
 .Col80{
   width: 60vw;
   text-align: center;
 }
 
+/*Colonne 20%*/
 .Col20{
   display :grid;
 }
 
+/*1er bloc de la colonne 20%*/
 .Col201{
   text-align: center;
   width: 30vw;
   height: 45vh;
 }
 
+/*2eme bloc de la colonne 20%*/
 .Col202{
   text-align: center;
   width: 30vw;
@@ -44,11 +51,15 @@ body { padding: 0rem; }
   margin: auto;
 }
 
+/*Barre de navigation*/
+
 .Navig{
   margin-left: 15%;
   display: grid;
   place-items: center;
 }
+
+/* Graphique */
 
 .pie {
   align-items: center;
@@ -104,6 +115,7 @@ body { padding: 0rem; }
   flex:70%;
 }
 
+/*Taille tablette*/
 @media all and (max-width:1000px){
   .App{
     width: 100vw;
@@ -126,6 +138,7 @@ body { padding: 0rem; }
   }
 }
 
+/* Taille téléphone*/
 @media all and (max-width:450px){
   .Affichage{
     font-size: large;

@@ -2,6 +2,8 @@ import React from "react";
 import '../App.css';
 import HomeApiTrainJ from "../API/HomeApiTrainJ";
 
+//Voir commentaire fichier home.jsx pour le fonctionnement
+
 class Vacance extends React.Component{
     state = {clé : "841d6f9d-c2de-4b6c-8a4d-047b0c8816a7"}
 

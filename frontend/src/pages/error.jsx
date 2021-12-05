@@ -1,9 +1,12 @@
 import React from "react";
+import '../App.css';
+
+//Page d'erreur
 
 function Error(){
     return(
         <div>
-            Page erreur
+            Mauvaise route
         </div>
     )
 }

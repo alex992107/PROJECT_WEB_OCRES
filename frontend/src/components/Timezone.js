@@ -6,12 +6,15 @@ class Timezone extends Component {
     const { data } = this.props;
     if (!data) return null;
 
-    //On parcoure l'arborescence jusqu'a la branche stop_date_time et on sélectionne departure_date_time
+    //On parcoure l'arborescence et on sélectionne timezone 
+
     const timezone = data
    
     return (
       <div>
           Fuseau horaire utilisé : <br/>{timezone}
+          {//On affiche le fuseau horaire 
+          }
       </div>
     )
   }
