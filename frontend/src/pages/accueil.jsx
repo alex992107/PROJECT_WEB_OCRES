@@ -49,7 +49,7 @@ class Accueil extends React.Component{
                             <h3>Requettes effectuées</h3>
                             <Graph/>
                       </div>  
-                      <div className="Col202">
+                      <div className="Col2022">
                             <h3>API MongoDB</h3>
                             <MyApi Nvxnom={nom}/>
                       </div> 

@@ -5,7 +5,8 @@ import {
   Line,
   XAxis,
   YAxis,
-  Legend
+  Legend,
+  ResponsiveContainer,
 } from "recharts";
 
 const data = [
@@ -49,6 +50,7 @@ const data = [
 
 export default function Graph() {
   return (
+    <ResponsiveContainer>
             <LineChart width={280} height={200} data={data}>
             <XAxis dataKey="name" />
             <YAxis />
@@ -56,5 +58,7 @@ export default function Graph() {
             <Line type="monotone" dataKey="RER_A" stroke="#ff0000"/>
             <Line type="monotone" dataKey="LIGNE_J" stroke="#82ca9d"/>
             </LineChart> 
+            </ResponsiveContainer>
+
   );
 }

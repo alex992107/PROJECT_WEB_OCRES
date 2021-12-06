@@ -40,7 +40,7 @@ body { padding: 0rem; }
 .Col201{
   text-align: center;
   width: 30vw;
-  height: 45vh;
+  height: 35vh;
 }
 
 /*2eme bloc de la colonne 20%*/
@@ -51,6 +51,12 @@ body { padding: 0rem; }
   margin: auto;
 }
 
+.Col2022{
+  text-align: center;
+  width: 30vw;
+  height: 55vh;
+  margin-top: 30%;
+}
 /*Barre de navigation*/
 
 .Navig{
@@ -130,6 +136,10 @@ body { padding: 0rem; }
 
   .Col202{
   display: none;
+  }
+
+  .Col2022{
+    display: none;
   }
 
   .Col80{
